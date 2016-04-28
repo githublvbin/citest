@@ -15,5 +15,8 @@ public class App
         	System.out.println("equal");
         else
         	System.out.println("unequal");
+        
+        String str = null;
+        str.toCharArray();
     }
 }
