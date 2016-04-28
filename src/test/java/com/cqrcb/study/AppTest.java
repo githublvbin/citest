@@ -33,6 +33,8 @@ public class AppTest
      */
     public void testApp()
     {
+    	App a = new App();
+    	a.b();
         assertTrue( true );
     }
 }
