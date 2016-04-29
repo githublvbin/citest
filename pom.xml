@@ -13,9 +13,10 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  
+ <!--  
   <reporting>
-	  <plugins>
+	  <plugins> 
+ 
 	     <plugin>
 	           <groupId>org.codehaus.mojo</groupId>
 	           <artifactId>findbugs-maven-plugin</artifactId>
@@ -26,6 +27,7 @@
 	              <xmlOutput>true</xmlOutput>
 	           </configuration>
 	        </plugin>
+
 	         <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
@@ -34,46 +36,17 @@
                     <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
                 </configuration>
             </plugin>           
- <!--
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>emma-maven-plugin</artifactId>
                 <version>1.0-alpha-3</version>
                 <inherited>true</inherited>
-                <configuration>
-                	<outputDirectory>${project.build.directory}</outputDirectory>
-                </configuration>
             </plugin>
- -->
+
 	   </plugins>
   </reporting>
-<!--      
-  <build>
-  	<pluginManagement>
-  	<plugins>
-  		<plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>emma-maven-plugin</artifactId>
-            <version>1.0-alpha-3</version>
-            <inherited>true</inherited>
-            <executions>
-                <execution>
-                    <id>emma</id>
-                    <phase>process-classes</phase>
-                    <goals>
-                        <goal>emma</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                <outputDirectory>${project.build.directory}</outputDirectory>
-            </configuration>
-        </plugin>
-  	</plugins>
-  	</pluginManagement>
-  </build>
--->
-
+ -->
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
